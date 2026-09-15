@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tanvi Crafts — Made with Love</title>
+  <meta name="description" content="Handmade crafts by Tanvi. Browse products and order on WhatsApp.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand"><img src="assets/logo.png" alt="Tanvi Crafts logo"></a>
+    <button class="cart-button" id="cartButton" aria-label="Open enquiry list">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l.9 5.4A2 2 0 0 0 9.1 13h7.6a2 2 0 0 0 1.9-1.4L20.4 6H6.2ZM5.8 4H22l-2.8 8.2A4 4 0 0 1 15.4 15H9.1a4 4 0 0 1-3.9-3.3L3.4 2H1V0h4.1l.7 4Z"/></svg>
+      <span>Enquiry</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Handmade crafts, <span>made with love</span></h1>
+      <p>Pick your favourites, add them to your enquiry list, and send it to us on WhatsApp.</p>
+    </section>
+
+    <section class="shop">
+      <div class="filters" id="filters" role="tablist" aria-label="Categories"></div>
+      <div class="grid" id="productGrid">
+        <p class="status">Loading products…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Tanvi Crafts · Made with love</p>
+    <a id="footerWhatsapp" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+  </footer>
+
+  <a class="whatsapp-fab" id="whatsappFab" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8A13 13 0 1 0 16 3Zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5l-.6-.4Z"/></svg>
+  </a>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Enquiry list" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your enquiry</h2>
+      <button class="icon-btn" id="closeCart" aria-label="Close enquiry list">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <form class="checkout" id="checkoutForm">
+      <label>Your name<input name="name" type="text" autocomplete="name" placeholder="Optional"></label>
+      <label>Message / delivery location<textarea name="notes" rows="2" placeholder="Optional"></textarea></label>
+      <button type="submit" class="btn btn-whatsapp" id="checkoutBtn">Send enquiry on WhatsApp</button>
+      <button type="button" class="btn-link" id="clearCart">Clear list</button>
+    </form>
+  </aside>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Product photo" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImg" alt=""></div>
+    <div class="lightbox-bar">
+      <div>
+        <h3 id="lightboxTitle"></h3>
+        <p class="lightbox-hint">Tap or click the photo to zoom</p>
+      </div>
+      <button class="btn" id="lightboxAdd">Add to enquiry</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
