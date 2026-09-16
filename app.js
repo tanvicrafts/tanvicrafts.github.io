@@ -64,6 +64,22 @@
     return state.products.find((p) => p.id === id);
   }
 
+  // ---------- Analytics ----------
+  // No-ops when gtag is blocked or still loading, so the shop never breaks.
+
+  function track(name, params) {
+    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+  }
+
+  function itemOf(p, qty) {
+    return {
+      item_id: p.id,
+      item_name: p.name,
+      item_category: p.category || "",
+      quantity: qty || 1,
+    };
+  }
+
   // ---------- Products ----------
 
   function renderFilters() {
@@ -128,6 +144,7 @@
     els.lightbox.hidden = false;
     document.body.style.overflow = "hidden";
     els.lightboxClose.focus();
+    track("view_item", { items: [itemOf(p)] });
   }
 
   function closeLightbox() {
@@ -195,6 +212,7 @@
     void els.cartCount.offsetWidth; // restart animation
     els.cartCount.classList.add("bump");
     showToast(`Added “${product.name}” to enquiry`);
+    track("add_to_cart", { items: [itemOf(product)] });
   }
 
   function openCart() {
@@ -231,12 +249,17 @@
 
   function checkout(event) {
     event.preventDefault();
-    if (!cartLines().length) return;
+    const lines = cartLines();
+    if (!lines.length) return;
     const data = new FormData(els.checkoutForm);
     const message = buildOrderMessage(
       String(data.get("name") || "").trim(),
       String(data.get("notes") || "").trim()
     );
+    track("begin_checkout", {
+      items: lines.map((l) => itemOf(l.product, l.qty)),
+      item_count: lines.reduce((n, l) => n + l.qty, 0),
+    });
     window.open(whatsappUrl(message), "_blank", "noopener");
   }
 
@@ -274,7 +297,11 @@
       const { inc, dec, remove } = t.dataset;
       if (inc) setQty(inc, (state.cart[inc] || 0) + 1);
       if (dec) setQty(dec, (state.cart[dec] || 0) - 1);
-      if (remove) setQty(remove, 0);
+      if (remove) {
+        const p = findProduct(remove);
+        if (p) track("remove_from_cart", { items: [itemOf(p, state.cart[remove])] });
+        setQty(remove, 0);
+      }
     });
 
     els.cartButton.addEventListener("click", openCart);
@@ -310,8 +337,10 @@
     state.products = data.products || [];
 
     const chatLink = whatsappUrl(`Hi ${state.store.name}! I have a question.`);
-    $("whatsappFab").href = chatLink;
-    $("footerWhatsapp").href = chatLink;
+    [$("whatsappFab"), $("footerWhatsapp")].forEach((a) => {
+      a.href = chatLink;
+      a.addEventListener("click", () => track("contact_whatsapp", { link_id: a.id }));
+    });
 
     // Drop cart entries for products that no longer exist.
     Object.keys(state.cart).forEach((id) => { if (!findProduct(id)) delete state.cart[id]; });
