@@ -86,6 +86,22 @@ window.STORE_DATA = {
       "inStock": true
     },
     {
+      "id": "shubh-labh-hanging",
+      "name": "Shubh Labh Door Hanging",
+      "description": "Pair of woollen flowers with Shubh Labh medallions, gold bead strings and bud drops. Available in pink, peach, purple, blue, red and yellow.",
+      "category": "Shubh Labh",
+      "image": "assets/products/shubh-labh-hanging.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "lotus-pearl-hangings",
+      "name": "Lotus Pearl Wall Hangings",
+      "description": "Long pearl strands with pink lotus flowers and a golden bell at the end — lovely beside doors and windows.",
+      "category": "Lotus",
+      "image": "assets/products/lotus-pearl-hangings.jpeg",
+      "inStock": true
+    },
+    {
       "id": "red-velvet-lotus",
       "name": "Red Velvet Lotus",
       "description": "Red velvet lotus with pearl-tipped petals and a pearl-ringed yellow centre — lovely for pooja decor.",
