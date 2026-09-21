@@ -86,6 +86,14 @@ window.STORE_DATA = {
       "inStock": true
     },
     {
+      "id": "sunflower-curtain-tieback",
+      "name": "Sunflower Curtain Tiebacks",
+      "description": "Cheerful handmade sunflowers that hold curtains back — sold as a pair, one for each side.",
+      "category": "Curtain Tiebacks",
+      "image": "assets/products/sunflower-curtain-tieback.jpeg",
+      "inStock": true
+    },
+    {
       "id": "shubh-labh-hanging",
       "name": "Shubh Labh Door Hanging",
       "description": "Pair of woollen flowers with Shubh Labh medallions, gold bead strings and bud drops. Available in pink, peach, purple, blue, red and yellow.",
