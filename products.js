@@ -102,6 +102,30 @@ window.STORE_DATA = {
       "inStock": true
     },
     {
+      "id": "shubh-labh-purple",
+      "name": "Purple Shubh Labh Hanging",
+      "description": "Pair of purple and lavender flowers with Shubh Labh lettering, long pearl strings and flower drops.",
+      "category": "Shubh Labh",
+      "image": "assets/products/shubh-labh-purple.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "shubh-labh-yellow",
+      "name": "Yellow & Green Shubh Labh Hanging",
+      "description": "Pair of yellow and green flowers with Shubh Labh lettering, pearl strings and hanging flower drops.",
+      "category": "Shubh Labh",
+      "image": "assets/products/shubh-labh-yellow.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "shubh-labh-pink",
+      "name": "Pink & Green Shubh Labh Hanging",
+      "description": "Pair of pink and green flowers with Shubh Labh lettering, pearl strings and hanging flower drops.",
+      "category": "Shubh Labh",
+      "image": "assets/products/shubh-labh-pink.jpeg",
+      "inStock": true
+    },
+    {
       "id": "lotus-pearl-hangings",
       "name": "Lotus Pearl Wall Hangings",
       "description": "Long pearl strands with pink lotus flowers and a golden bell at the end — lovely beside doors and windows.",
