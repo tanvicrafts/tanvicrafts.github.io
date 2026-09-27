@@ -1,3 +1,0 @@
-Frontend -> API: POST /login
-API -> service: call POST /login
-API -> Frontend: response
