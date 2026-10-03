@@ -86,6 +86,38 @@ window.STORE_DATA = {
       "inStock": true
     },
     {
+      "id": "mini-bouquet-collection",
+      "name": "Mini Bouquet — 10 Designs",
+      "description": "Single-flower mini bouquets wrapped in paper with an \"Especially for you\" tag. Choose from tulip, daisy, rose, sunflower, lily, lavender, carnation, pink daisy, calla lily or baby's breath.",
+      "category": "Bouquets",
+      "image": "assets/products/mini-bouquet-collection.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "wrapped-flower-bouquet",
+      "name": "Wrapped Single Flower Bouquet",
+      "description": "A single handmade flower wrapped in coloured paper and finished with a satin bow — tulip, lily, sunflower, daisy and more.",
+      "category": "Bouquets",
+      "image": "assets/products/wrapped-flower-bouquet.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "flower-sleeve-bouquet",
+      "name": "Single Flower Gift Sleeve",
+      "description": "One handmade flower in a clear sleeve tied with a red \"Just for you\" ribbon. Lovely as a small gift or return gift.",
+      "category": "Bouquets",
+      "image": "assets/products/flower-sleeve-bouquet.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-collection",
+      "name": "Keychain Collection",
+      "description": "Handmade keychains in 20 designs — nazar, bow, flower, daisy, rose, butterfly, heart, star, tulip, sunflower, cherry, strawberry, bear, kitty, rainbow, mini bouquet, love letter, peace sign, smiley and bee.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-collection.jpeg",
+      "inStock": true
+    },
+    {
       "id": "sunflower-curtain-tieback",
       "name": "Sunflower Curtain Tiebacks",
       "description": "Cheerful handmade sunflowers that hold curtains back — sold as a pair, one for each side.",
