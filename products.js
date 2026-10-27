@@ -62,6 +62,14 @@ window.STORE_DATA = {
       "inStock": true
     },
     {
+      "id": "red-flower-toran",
+      "name": "Red Flower Pearl Toran",
+      "description": "Red woollen flowers with green leaves on a pearl string, with pearl drops below each flower. Lovely above a mandir or doorway.",
+      "category": "Toran",
+      "image": "assets/products/red-flower-toran.jpeg",
+      "inStock": true
+    },
+    {
       "id": "pink-bud-toran",
       "name": "Pink Flower & Bud Toran",
       "description": "Pearl-string toran with layered pink flowers and hanging lotus-bud drops.",
@@ -107,6 +115,38 @@ window.STORE_DATA = {
       "description": "One handmade flower in a clear sleeve tied with a red \"Just for you\" ribbon. Lovely as a small gift or return gift.",
       "category": "Bouquets",
       "image": "assets/products/flower-sleeve-bouquet.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "shubh-labh-red",
+      "name": "Red Shubh Labh Flower Hanging",
+      "description": "Pair of red flowers with yellow centres and gold bead lettering, finished with gold chains and red flower drops.",
+      "category": "Shubh Labh",
+      "image": "assets/products/shubh-labh-red.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-teddy-bear",
+      "name": "Teddy Bear Keychain",
+      "description": "Soft brown teddy bear keychain with a red bow and pearl, on a gold ring and chain.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-teddy-bear.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-strawberry",
+      "name": "Strawberry Keychain",
+      "description": "Fuzzy red strawberry keychain dotted with pearls and topped with green leaves.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-strawberry.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-heart",
+      "name": "Pink Heart Keychain",
+      "description": "Fluffy pink heart keychain scattered with pearls — a sweet little gift.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-heart.jpeg",
       "inStock": true
     },
     {
