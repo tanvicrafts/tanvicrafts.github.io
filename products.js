@@ -150,6 +150,62 @@ window.STORE_DATA = {
       "inStock": true
     },
     {
+      "id": "keychain-pearl-heart",
+      "name": "Pearl Heart Outline Keychain",
+      "description": "Open pastel-pink heart keychain studded with pearls all the way round.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-pearl-heart.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-tulip",
+      "name": "Pink Tulip Keychain",
+      "description": "Soft pink tulip bud on a green stem with a leaf, on a silver ring and chain.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-tulip.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-cherry",
+      "name": "Cherry Bow Keychain",
+      "description": "Two fuzzy red cherries hanging from a green bow-shaped stem.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-cherry.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-grapes",
+      "name": "Purple Grapes Keychain",
+      "description": "Bunch of purple grapes with a pearl in each one, topped with bright green leaves.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-grapes.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-sunflower",
+      "name": "Sunflower Keychain",
+      "description": "Bright yellow sunflower keychain with a chocolate-brown centre.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-sunflower.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-sunflower-pair",
+      "name": "Sunflower Keychain Pair",
+      "description": "Two matching yellow sunflower keychains with brown centres — one for you, one for a friend.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-sunflower-pair.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "keychain-smiley",
+      "name": "Smiley Face Keychains",
+      "description": "Round yellow smiley keychains in four faces — heart eyes, cool sunglasses, wink with tongue out and blowing a kiss.",
+      "category": "Keychains",
+      "image": "assets/products/keychain-smiley.jpeg",
+      "inStock": true
+    },
+    {
       "id": "keychain-collection",
       "name": "Keychain Collection",
       "description": "Handmade keychains in 20 designs — nazar, bow, flower, daisy, rose, butterfly, heart, star, tulip, sunflower, cherry, strawberry, bear, kitty, rainbow, mini bouquet, love letter, peace sign, smiley and bee.",
@@ -219,6 +275,70 @@ window.STORE_DATA = {
       "description": "Large layered orange lotus with green leaves and a spiral yellow centre.",
       "category": "Lotus",
       "image": "assets/products/orange-lotus.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "pink-lotus-pair",
+      "name": "Pink Lotus Pair",
+      "description": "Pair of layered pink lotus flowers with dark pink and green leaves and a spiral yellow centre.",
+      "category": "Lotus",
+      "image": "assets/products/pink-lotus-pair.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-collection",
+      "name": "Mini Aasan — 5 Colours",
+      "description": "Small round pearl-edged aasans for Laddu Gopal or a little idol, with lotus-petal backs and two bolsters. Choose from pink, yellow, red, blue or lavender.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-collection.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-pink",
+      "name": "Pink & White Aasan",
+      "description": "Pink round aasan with pink and white lotus petals, white bolsters and a pearl border.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-pink.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-lavender",
+      "name": "Lavender Aasan",
+      "description": "Lavender round aasan with lavender and white lotus petals, white bolsters and a pearl border.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-lavender.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-red-yellow",
+      "name": "Red & Yellow Aasan",
+      "description": "Red round aasan with red and yellow lotus petals, yellow bolsters and a pearl border.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-red-yellow.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-blue",
+      "name": "Blue & Aqua Aasan",
+      "description": "Royal blue round aasan with blue and aqua lotus petals, aqua bolsters and a pearl border.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-blue.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-yellow-orange",
+      "name": "Yellow & Orange Aasan",
+      "description": "Yellow round aasan with yellow and orange lotus petals, orange bolsters and a pearl border.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-yellow-orange.jpeg",
+      "inStock": true
+    },
+    {
+      "id": "aasan-pink-flower",
+      "name": "Pink Flower Square Aasan",
+      "description": "Square aasan in two shades of pink with a large five-petal flower back, two bolsters and a pearl border.",
+      "category": "Aasan",
+      "image": "assets/products/aasan-pink-flower.jpeg",
       "inStock": true
     }
   ]
